@@ -1,0 +1,234 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: 60px;
+    align-items: center;
+}
+
+.logo-container,
+.nav-links,
+.quick-search {
+    display: flex;
+}
+
+#quick-search-input {
+    width: 250px;
+    height: 35px;
+    font-size: .85em;
+    font-weight: 700;
+    color: #424242;
+    border: 2px solid rgb(43, 42, 42);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    padding: 4px 30px;
+    background: #ffffff url(icon-search.svg) no-repeat 9px 8px;
+}
+
+.logo-container {
+    flex: 2;
+}
+
+form {
+    flex: 0.1;
+}
+
+nav {
+    flex: 1;
+}
+
+.nav-links {
+    justify-content: space-around;
+    list-style: none;
+}
+
+header {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(180, 156, 156);
+}
+
+.popular-text,
+.recent-text {
+    width: 90%;
+    margin: auto;
+}
+
+.text-row {
+    display: flex;
+    align-items: center;
+}
+
+.text-row h2 {
+    flex: 1;
+}
+
+.row {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.movie {
+    width: 250px;
+}
+
+.movie-main {
+    width: 350px;
+}
+
+.movie-box {
+    text-decoration: none;
+    text-align: left;
+}
+
+.movie-title {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+div.movie-text {
+    flex: 0.8;
+
+}
+
+.recent-text {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgb(180, 156, 156);
+}
+
+.line {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgb(180, 156, 156);
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.actors div {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.avatar-thumb {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.list-cast {
+    display: flex;
+    align-items: center;
+}
+
+
+fieldset,
+label {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 20px;
+}
+
+.movie-main {
+    margin-top: 20px;
+}
+
+.movie-text h1 {
+    font-weight: 900;
+}
+
+.movie-text h4 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.movie-text h5 {
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.info {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.crew {
+    margin-top: 20px;
+    margin-left: 70px;
+}
+
+.tableCell a {
+    text-decoration: none;
+    color: black;
+}
+
+.trailer {
+    flex: 1;
+}
+
+.reviews {
+    flex: 1;
+}
+
+
+
+/****** Style Star Rating Widget *****/
+
+.rating {
+    border: none;
+    float: left;
+}
+
+.rating>input {
+    display: none;
+}
+
+.rating>label:before {
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+
+.rating>.half:before {
+    content: "\f089";
+    position: absolute;
+}
+
+.rating>label {
+    color: #ddd;
+    float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating>input:checked~label,
+/* show gold star when clicked */
+.rating:not(:checked)>label:hover,
+/* hover current star */
+.rating:not(:checked)>label:hover~label {
+    color: #FFD700;
+}
+
+/* hover previous stars in list */
+
+.rating>input:checked+label:hover,
+/* hover current star when changing rating */
+.rating>input:checked~label:hover,
+.rating>label:hover~input:checked~label,
+/* lighten current selection */
+.rating>input:checked~label:hover~label {
+    color: #FFED85;
+}

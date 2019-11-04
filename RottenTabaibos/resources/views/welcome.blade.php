@@ -1,99 +1,167 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
 
-        <title>Laravel</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RottenTabaibos</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.1/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="/images/logo/1.png" alt="logo" height="38">
+            </a>
+        </div>
+        <form method="GET" action="https://" accept-charset="UTF-8" id="quick-search" name="quick-search">
+            <div id="quick-search-container">
+                <input id="quick-search-input" name="query" autocomplete="off" type="search" value="">
+            </div>
+        </form>
+        <nav>
+            <ul class="nav-links">
+                <li>Browse<a class="nav-link" href="#"></a></li>
+                <li>Login<a class="nav-link" href="#"></a></li>
+                <li>Register<a class="nav-link" href="#"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="home">
+            <div class="popular">
+                <div class="popular-text">
+                    <div class="text-row">
+                        <h2>
+                            <i class="fas fa-fire-alt" style="color:red;"></i> Popular Movies
+                        </h2>
+                        <h4>Browse All</h4>
+                    </div>
                 </div>
-            @endif
+                <div class="row">
+                    <div class="movie">
+                        <!-- https://image.tmdb.org/t/p/w185//udDclJoHjfjb8Ekgsd4FDteOkCU.jpg -->
+                        <a href="movie.html" class="movie-link">
+                            <img src="https://image.tmdb.org/t/p/w185//udDclJoHjfjb8Ekgsd4FDteOkCU.jpg" alt="">
+                        </a>
+                        <div class="movie-box">
+                            <a href="movie/fast-furious-presents-hobbs-shaw-2019.html" class="movie-title">Joker</a>
+                            <div class="movie-year">2019</div>
+                        </div>
+                    </div>
+                    <div class="movie">
+                        <!-- https://image.tmdb.org/t/p/w185//udDclJoHjfjb8Ekgsd4FDteOkCU.jpg -->
+                        <a href="#" class="movie-link">
+                            <img src="https://image.tmdb.org/t/p/w185//udDclJoHjfjb8Ekgsd4FDteOkCU.jpg" alt="">
+                        </a>
+                        <div class="movie-box">
+                            <a href="movie/fast-furious-presents-hobbs-shaw-2019.html" class="movie-title">Joker</a>
+                            <div class="movie-year">2019</div>
+                        </div>
+                    </div>
+                    <div class="movie">
+                        <!-- https://image.tmdb.org/t/p/w185//udDclJoHjfjb8Ekgsd4FDteOkCU.jpg -->
+                        <a href="#" class="movie-link">
+                            <img src="https://image.tmdb.org/t/p/w185//udDclJoHjfjb8Ekgsd4FDteOkCU.jpg" alt="">
+                        </a>
+                        <div class="movie-box">
+                            <a href="movie/fast-furious-presents-hobbs-shaw-2019.html" class="movie-title">Joker</a>
+                            <div class="movie-year">2019</div>
+                        </div>
+                    </div>
+                    <div class="movie">
+                        <!-- https://image.tmdb.org/t/p/w185//udDclJoHjfjb8Ekgsd4FDteOkCU.jpg -->
+                        <a href="#" class="movie-link">
+                            <img src="https://image.tmdb.org/t/p/w185//udDclJoHjfjb8Ekgsd4FDteOkCU.jpg" alt="">
+                        </a>
+                        <div class="movie-box">
+                            <a href="movie/fast-furious-presents-hobbs-shaw-2019.html" class="movie-title">Joker</a>
+                            <div class="movie-year">2019</div>
+                        </div>
+                    </div>
+                    <div class="movie">
+                        <!-- https://image.tmdb.org/t/p/w185//udDclJoHjfjb8Ekgsd4FDteOkCU.jpg -->
+                        <a href="#" class="movie-link">
+                            <img src="https://image.tmdb.org/t/p/w185//udDclJoHjfjb8Ekgsd4FDteOkCU.jpg" alt="">
+                        </a>
+                        <div class="movie-box">
+                            <a href="movie/fast-furious-presents-hobbs-shaw-2019.html" class="movie-title">Joker</a>
+                            <div class="movie-year">2019</div>
+                        </div>
+                    </div>
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
             </div>
-        </div>
-    </body>
+            <div class="recent">
+                <div class="recent-text">
+                    <div class="text-row">
+                        <h2>
+                            <i class="fas fa-plus" style="color: red;"></i></i> Recent Movies
+                        </h2>
+                        <h4>Browse All</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="movie">
+                        <!-- https://image.tmdb.org/t/p/w185//udDclJoHjfjb8Ekgsd4FDteOkCU.jpg -->
+                        <a href="#" class="movie-link">
+                            <img src="https://image.tmdb.org/t/p/w185//udDclJoHjfjb8Ekgsd4FDteOkCU.jpg" alt="">
+                        </a>
+                        <div class="movie-box">
+                            <a href="movie/fast-furious-presents-hobbs-shaw-2019.html" class="movie-title">Joker</a>
+                            <div class="movie-year">2019</div>
+                        </div>
+                    </div>
+                    <div class="movie">
+                        <!-- https://image.tmdb.org/t/p/w185//udDclJoHjfjb8Ekgsd4FDteOkCU.jpg -->
+                        <a href="#" class="movie-link">
+                            <img src="https://image.tmdb.org/t/p/w185//udDclJoHjfjb8Ekgsd4FDteOkCU.jpg" alt="">
+                        </a>
+                        <div class="movie-box">
+                            <a href="movie/fast-furious-presents-hobbs-shaw-2019.html" class="movie-title">Joker</a>
+                            <div class="movie-year">2019</div>
+                        </div>
+                    </div>
+                    <div class="movie">
+                        <!-- https://image.tmdb.org/t/p/w185//udDclJoHjfjb8Ekgsd4FDteOkCU.jpg -->
+                        <a href="#" class="movie-link">
+                            <img src="https://image.tmdb.org/t/p/w185//udDclJoHjfjb8Ekgsd4FDteOkCU.jpg" alt="">
+                        </a>
+                        <div class="movie-box">
+                            <a href="movie/fast-furious-presents-hobbs-shaw-2019.html" class="movie-title">Joker</a>
+                            <div class="movie-year">2019</div>
+                        </div>
+                    </div>
+                    <div class="movie">
+                        <!-- https://image.tmdb.org/t/p/w185//udDclJoHjfjb8Ekgsd4FDteOkCU.jpg -->
+                        <a href="#" class="movie-link">
+                            <img src="https://image.tmdb.org/t/p/w185//udDclJoHjfjb8Ekgsd4FDteOkCU.jpg" alt="">
+                        </a>
+                        <div class="movie-box">
+                            <a href="movie/fast-furious-presents-hobbs-shaw-2019.html" class="movie-title">Joker</a>
+                            <div class="movie-year">2019</div>
+                        </div>
+                    </div>
+                    <div class="movie">
+                        <!-- https://image.tmdb.org/t/p/w185//udDclJoHjfjb8Ekgsd4FDteOkCU.jpg -->
+                        <a href="#" class="movie-link">
+                            <img src="https://image.tmdb.org/t/p/w185//udDclJoHjfjb8Ekgsd4FDteOkCU.jpg" alt="">
+                        </a>
+                        <div class="movie-box">
+                            <a href="movie/fast-furious-presents-hobbs-shaw-2019.html" class="movie-title">Joker</a>
+                            <div class="movie-year">2019</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
 </html>
