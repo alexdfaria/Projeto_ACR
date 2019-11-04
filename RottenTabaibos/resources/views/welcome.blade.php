@@ -53,7 +53,7 @@
                 <div class="popular-text">
                     <div class="text-row">
                         <h2>
-                            <i class="fas fa-fire-alt" style="color:red;"></i> Popular Movies
+                            <i style="color:red;"></i> Popular Movies
                         </h2>
                         <h4>Browse All</h4>
                     </div>
@@ -61,7 +61,7 @@
                 <div class="row">
                     <div class="movie">
                         <!-- https://image.tmdb.org/t/p/w185//udDclJoHjfjb8Ekgsd4FDteOkCU.jpg -->
-                        <a href="movie.html" class="movie-link">
+                        <a href="/movie" class="movie-link">
                             <img src="https://image.tmdb.org/t/p/w185//udDclJoHjfjb8Ekgsd4FDteOkCU.jpg" alt="">
                         </a>
                         <div class="movie-box">
