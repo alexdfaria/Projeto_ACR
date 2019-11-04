@@ -15,7 +15,7 @@
 <body>
     <header>
         <div class="logo-container">
-            <a href="index.html">
+            <a href="/">
                 <img src="/images/logo/1.png" alt="logo" height="38">
             </a>
         </div>
@@ -30,10 +30,10 @@
                 <div class="nav-link">
                     
                     @auth
-                        <a class="principal" href="/home">Home</a>
+                        <a class="principal" href="/">Home</a>
                         <a href="/procurar">Browse</a>
                     @else
-                        <a class="principal" href="/home">Home</a>
+                        <a class="principal" href="/">Home</a>
                         <a href="/procurar">Browse</a>
 
                         <a href="{{ route('login') }}">Login</a>
@@ -46,6 +46,7 @@
             @endif
         </div>
     </header>
+    <hr>
     <main>
         <section class="home">
             <div class="popular">

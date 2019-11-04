@@ -1,6 +1,60 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="en">
 
-@section('content')
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RottenTabaibos</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.1/css/all.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+        </div>
+
+        <div class="topnav">
+            <a class="principal" href="/home">Home</a>
+            <a href="{{ route('register') }}">Register</a>
+            <a href="{{ route('login')}}">Login</a>
+        </div>
+
+    </header>
+        <hr>
+        
+    <form method="POST" action="{{ route('password.email') }}">
+        @csrf 
+        <div class="avatar-container"> 
+            
+            <img src= "/images/logo/1.png" alt="Avatar" class="avatar"> 
+        </div> 
+  
+        <div class="reset-container">
+
+        <label for="email"><b>{{ __('Endereço de Email da conta') }}</b></label> 
+            <br>
+            <input type="text" placeholder="Inserir Nome do Utilizador / email" name="email" required> 
+
+            @error('email')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
+            <button type="submit" class="reset_password">
+                {{ __('Enviar Link Reset Palavra Passe') }}
+            </button>
+        </div> 
+    </form> 
+</body>
+
+</html>
+
+<!-- ------------------------------------------------------- 
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -31,17 +85,11 @@
                             </div>
                         </div>
 
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Send Password Reset Link') }}
-                                </button>
-                            </div>
-                        </div>
+
                     </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
-@endsection
+-->

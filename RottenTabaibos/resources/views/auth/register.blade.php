@@ -17,12 +17,12 @@
             <img src="/images/logo/1.png" alt="logo" height="38">
         </div>
         <div class="topnav">
-                <a class="principal" href="/home">Home</a>
+                <a class="principal" href="/">Home</a>
                 <a href="{{ route('login') }}">Login</a>
         </div>
 
     </header>
-
+        <hr>
         <form method="POST" action="{{ route('register') }}">
             @csrf
             

@@ -18,12 +18,12 @@
         </div>
 
         <div class="topnav">
-            <a class="principal" href="/home">Home</a>
+            <a class="principal" href="/">Home</a>
             <a href="{{ route('register') }}">Register</a>
         </div>
 
     </header>
-
+        <hr>
     <form method="POST" action="{{ route('login') }}">
         @csrf 
         <div class="avatar-container"> 

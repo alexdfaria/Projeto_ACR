@@ -30,8 +30,8 @@ header {
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
-    padding: 4px 30px;
-    background: #ffffff url(icon-search.svg) no-repeat 9px 8px;
+    padding: 10px 30px;
+    background: #ffffff url("/images/icon-search.svg") no-repeat 9px 8px;
 }
 
 .logo-container {
@@ -40,13 +40,6 @@ header {
 
 form {
     flex: 0.1;
-}
-
-
-header {
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: rgb(180, 156, 156);
 }
 
 .popular-text,
@@ -275,7 +268,7 @@ label {
   img.avatar { 
     width: 50%; 
 }
-.loginbtn{
+.loginbtn, .reset_password{
     background-color: rgb(221, 55, 55);
     color: white;
     padding: 20px 20px;
@@ -284,7 +277,7 @@ label {
     width: 105%;
     opacity: 0.9;
 } 
-.login-container{
+.login-container, .reset-container{
     max-width: 600px;
     margin: auto;
     margin-top: 60px;
