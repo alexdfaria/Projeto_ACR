@@ -18,6 +18,8 @@ Route::get('/', function () {
 
 Route::get('/home', 'HomeController@index');
 
+Route::get('/procura', 'ProcuraController@index');
+
 Auth::routes();
 
 

@@ -67,7 +67,11 @@ form {
     width: 250px;
 }
 
-
+.movie-row{
+    display: inline-flex;
+    width: 90%;
+    margin: auto;
+}
 .movie-main {
     width: 350px;
 }
@@ -289,6 +293,7 @@ label {
 
 .procura-principal{
    text-align: center;
+   width: 60%;
    margin: auto;
 }
 
