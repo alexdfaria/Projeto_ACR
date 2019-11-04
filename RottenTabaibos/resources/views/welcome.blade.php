@@ -25,13 +25,27 @@
                 <input id="quick-search-input" name="query" autocomplete="off" type="search" value="">
             </div>
         </form>
-        <nav>
-            <ul class="nav-links">
-                <li>Browse<a class="nav-link" href="#"></a></li>
-                <li>Login<a class="nav-link" href="#"></a></li>
-                <li>Register<a class="nav-link" href="#"></a></li>
-            </ul>
-        </nav>
+            <div class="topnav">
+                
+                @if (Route::has('login'))
+                <div class="nav-link">
+                    
+                    @auth
+                        <a class="principal" href="/home">Home</a>
+                        <a href="/procurar">Browse</a>
+                    @else
+                        <a class="principal" href="/home">Home</a>
+                        <a href="/procurar">Browse</a>
+
+                        <a href="{{ route('login') }}">Login</a>
+
+                        @if (Route::has('register'))
+                            <a href="{{ route('register') }}">Register</a>
+                        @endif
+                    @endauth
+                </div>
+            @endif
+        </div>
     </header>
     <main>
         <section class="home">
